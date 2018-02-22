@@ -1,0 +1,13 @@
+<a href [routerLink] = "['../show']">Home</a>
+<p>Add a new author:</p>
+
+<form (submit)="onSubmit()" onsubmit="window.location.href='../show';" novalidate>
+	<p>
+		Name:
+		<input type="text" name="newAuthor.name" [(ngModel)]="newAuthor.name" />
+	</p> 
+	<p>
+		<button [routerLink] = "['../show']">Cancel</button> 
+		<input type="submit" value="Submit"/>
+	</p>
+</form>

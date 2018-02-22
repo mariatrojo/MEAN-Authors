@@ -1,0 +1,12 @@
+<a href [routerLink] = "['../../show']">Home</a>
+<p>Edit this author:</p>
+
+	<p>
+		Name:
+		<input type="text" name="theAuthor.name" [(ngModel)]="theAuthor.name"/>
+	</p> 
+	<p>
+		<button type="button" [routerLink] = "['../../show']">Cancel</button> 
+		<button type="button" value="Submit" (click)="onSubmit()">Submit</button>
+	</p>
+
